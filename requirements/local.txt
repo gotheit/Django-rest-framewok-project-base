@@ -1,0 +1,25 @@
+-r base.txt
+Werkzeug==1.0.1 # https://github.com/pallets/werkzeug
+#psycopg2-binary not production
+psycopg2-binary
+# Code quality
+# ------------------------------------------------------------------------------
+flake8==3.9.1  # https://github.com/PyCQA/flake8
+flake8-isort==4.0.0  # https://github.com/gforcada/flake8-isort
+isort==4.3.5
+pydocstyle==6.0.0
+coverage==5.5  # https://github.com/nedbat/coveragepy
+black==21.4b2  # https://github.com/ambv/black
+pylint-django==2.4.3  # https://github.com/PyCQA/pylint-django
+pre-commit==2.12.1  # https://github.com/pre-commit/pre-commit
+bandit==1.6.2
+safety==1.8.4
+
+# Django
+# ------------------------------------------------------------------------------
+factory-boy==3.2.0  # https://github.com/FactoryBoy/factory_boy
+
+
+django-extensions==3.0.9 # https://github.com/django-extensions/django-extensions
+django-coverage-plugin>=1.8.0  # https://github.com/nedbat/django_coverage_plugin
+pytest-django>=4.2.0  # https://github.com/pytest-dev/pytest-django
