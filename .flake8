@@ -1,0 +1,3 @@
+[flake8]
+max-line-length = 120
+exclude = */migrations/*, *.pyc, *logfile.txt, *db.sqlite3, *.tpl, *.sh, *celerybeat-schedule, __init__.py
