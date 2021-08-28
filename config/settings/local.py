@@ -63,8 +63,12 @@ DEFAULT_CONTACT_EMAIL = env(
 )
 
 EMAIL_TIMEOUT = env.int(
-    "DJANGO_EMAIL_BACKEND", default=5
+    "EMAIL_TIMEOUT", default=5
 )
+# urls settings
+
+
+
 # WhiteNoise
 # ------------------------------------------------------------------------------
 # http://whitenoise.evans.io/en/latest/django.html#using-whitenoise-in-development
@@ -127,10 +131,11 @@ REST_FRAMEWORK = {
 # django-cors-headers
 CORS_ALLOWED_ORIGINS = env.list("CORS_ALLOWED_ORIGINS", default=["localhost"])
 
-CORS_ORIGIN_WHITELIST = env.list("CORS_ORIGIN_WHITELIST ", default=["localhost"])
+CORS_ORIGIN_WHITELIST = env.list("CORS_ORIGIN_WHITELIST", default=["localhost"])
 
 CSRF_TRUSTED_ORIGINS = env.list("CSRF_TRUSTED_ORIGINS", default=["localhost"])
 
 # url for token
 URL_TOKE_SEND_ACCOUNT = env("URL_TOKE_SEND_ACCOUNT", default="localhost")
 URL_TOKE_SEND_RESET_PASSWORD = env("URL_TOKE_SEND_RESET_PASSWORD", default="localhost")
+URL_BASE_BACKEND = env("URL_BASE_BACKEND", default="localhost")
