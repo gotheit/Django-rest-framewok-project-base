@@ -36,18 +36,18 @@ Project creation that serves as the basis for developing a REST API using Django
     # ------------------------------------------------------------------------------  
     # TIP: better off using DNS, however, redirect is OK too  
     DJANGO_SECURE_SSL_REDIRECT=False  
-      
+  
     # Email  
-    # ------------------------------------------------------------------------------  
-    DJANGO_SERVER_EMAIL=django.core.mail.backends.console.EmailBackend  
-    EMAIL_HOST=  
-    EMAIL_HOST_USER=  
-    EMAIL_HOST_PASSWORD=  
-    EMAIL_PORT=444  
-    EMAIL_USE_TLS=True  
-    DEFAULT_FROM_EMAIL=  
-    DEFAULT_CONTACT_EMAIL=  
-    DJANGO_EMAIL_BACKEND=10  
+    # ------------------------------------------------------------------------------
+    DJANGO_EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend  
+    EMAIL_HOST=
+    EMAIL_HOST_USER=
+    EMAIL_HOST_PASSWORD=
+    EMAIL_PORT=587
+    EMAIL_USE_TLS=True
+    DEFAULT_FROM_EMAIL=
+    DEFAULT_CONTACT_EMAIL=contacto@ejmeplo.com
+    EMAIL_TIMEOUT=10 
       
     # Gunicorn  
     # ------------------------------------------------------------------------------  
@@ -79,6 +79,7 @@ Project creation that serves as the basis for developing a REST API using Django
     # ------------------------------------------------------------------------------  
     URL_TOKE_SEND_ACCOUNT=http://localhost:8000  
     URL_TOKE_SEND_RESET_PASSWORD=http://localhost:8000
+     URL_BASE_BACKEND=http://localhost:8000
 :wrench:**Add variables to .postgres file**
 
     # PostgreSQL  
