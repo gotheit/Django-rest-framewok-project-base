@@ -4,13 +4,15 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views import defaults as default_views
 from apps.users.views import home
-
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
     path('', home, name='home'),
     path('api/', include(('apps.users.urls', 'users'), namespace='users')),
+    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('images/favicons/favicon.ico'))),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \
               + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
