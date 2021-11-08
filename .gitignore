@@ -329,3 +329,8 @@ apps/media/
 .env
 .envs/*
 !.envs/.local/
+.idea/modules.xml
+.idea/Django-rest-framewok-project-base.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/vcs.xml
