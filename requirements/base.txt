@@ -15,3 +15,4 @@ django-model-utils==4.1.1  # https://github.com/jazzband/django-model-utils
 djangorestframework==3.12.4  # https://github.com/encode/django-rest-framework
 django-cors-headers==3.7.0 # https://github.com/adamchainz/django-cors-headers
 djangorestframework-simplejwt==4.6.0 # https://github.com/jazzband/django-rest-framework-simplejwt/blob/master/docs/getting_started.rst
+drf-api-logger # https://github.com/vishalanandl177/DRF-API-Logger

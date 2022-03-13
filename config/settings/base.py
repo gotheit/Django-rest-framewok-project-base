@@ -61,6 +61,7 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     "rest_framework",
     "corsheaders",
+    "drf_api_logger",
 ]
 
 LOCAL_APPS = [
@@ -122,6 +123,7 @@ MIDDLEWARE = [
     "django.middleware.common.BrokenLinkEmailsMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    "drf_api_logger.middleware.api_logger_middleware.APILoggerMiddleware",
 ]
 
 # STATIC
@@ -229,5 +231,7 @@ LOGGING = {
 
 # django-cors-headers - https://github.com/adamchainz/django-cors-headers#setup
 CORS_URLS_REGEX = r"^/api/.*$"
-# Your stuff...
 # ------------------------------------------------------------------------------
+
+# Log every request into the database.
+DRF_API_LOGGER_DATABASE = True
