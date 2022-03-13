@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #0563bb;
+  background: #1473cb;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #0678e3;
+  background: #1473cb;
   transition: background 0.2s ease-in-out;
 }
 
@@ -1114,7 +1114,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
+  background: #0563bb;
   color: #45505b;
   font-size: 14px;
   text-align: center;
@@ -1157,15 +1157,17 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #0678e3;
+  background: #0269cb;
   color: #fff;
   text-decoration: none;
 }
 
 #footer .copyright {
   margin: 0 0 5px 0;
+   color: #fff;
 }
 
 #footer .credits {
   font-size: 13px;
+   color: #fff;
 }
